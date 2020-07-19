@@ -35,6 +35,17 @@
                 margin: 0;
                 padding: 20px;
             }
+            @media(max-width: 800px) {
+                #grid {
+                    display: block;
+                }
+                #grid ol {
+                    border-right: none;
+                }
+                h1 {
+                    border-bottom: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -55,7 +66,7 @@
                 in the specification of presentation characteristics, 
                 enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, 
                 and reduce complexity and repetition in the structural content.<br><br>
-                <img src="CSS_LOGO.png" width="8%">
+                <img src="CSS_LOGO.png" width="12%">
                 </p><p style="margin-top:45px;">Separation of formatting and content also makes it feasible 
                 to present the same markup page in different styles for different rendering methods, such as on-screen, in print, 
                 by voice (via speech-based browser or screen reader), and on Braille-based tactile devices.<br>
