@@ -1,27 +1,19 @@
 var Body = {
     setColor:function(color){
-        document.querySelector('body').style.color = color;
+        // document.querySelector('body').style.color = color;
+        $('body').css('color', color);
     },
     setBackgroundColor:function(color){
-        document.querySelector('body').style.backgroundColor = color;
+        // document.querySelector('body').style.backgroundColor = color;
+        $('body').css('backgroundColor', color);
     }
 };
 var Link = {
     setIndexColor:function(color){
-        var target_a = document.querySelectorAll('a');
-        for( var i = 0; i < target_a.length; i++){
-            if(target_a[i].className == ''){
-                target_a[i].style.color = color;
-            }
-        }
+        $('a').css('color', color);
     },
     setHyperlinkColor:function(color){
-        var target_a = document.querySelectorAll('a');
-        for( var i = 0; i < target_a.length; i++){
-        if(target_a[i].className == 'hyperlink'){
-                target_a[i].style.color = color;
-            }
-        }
+        $('.hyperlink').css('color', color)
     }
 };
 function nightDayHnadler(self){
